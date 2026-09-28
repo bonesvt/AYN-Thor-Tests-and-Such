@@ -1,0 +1,48 @@
+{
+  "id": "jak-x-combat-racing",
+  "name": "Jak X: Combat Racing",
+  "platform": "PS2",
+  "notes": "Set Jak X to 16:9 in its own options menu (or use a widescreen patch) and keep the emulator's aspect ratio on Auto/16:9. If the emulator shows the game with black bars on the sides, change viewport.aspect to \"4:3\".",
+  "calibrated": false,
+  "viewport": {
+    "aspect": "16:9"
+  },
+  "background": "#05070A",
+  "regions": [
+    { "id": "race_status", "label": "Position / lap", "src": [0.03, 0.04, 0.22, 0.16] },
+    { "id": "minimap",     "label": "Track map",      "src": [0.78, 0.04, 0.19, 0.34] },
+    { "id": "weapon",      "label": "Weapon / ammo",  "src": [0.78, 0.74, 0.19, 0.22] },
+    { "id": "vehicle",     "label": "Health / turbo", "src": [0.03, 0.78, 0.26, 0.18] }
+  ],
+  "layouts": [
+    {
+      "name": "Race HUD",
+      "placements": [
+        { "region": "race_status", "dst": [0.02, 0.02, 0.47, 0.22], "border": "#3A7BFF" },
+        { "region": "weapon",      "dst": [0.51, 0.02, 0.47, 0.22], "border": "#FF8A00" },
+        { "region": "minimap",     "dst": [0.25, 0.26, 0.50, 0.50], "border": "#29D17D" },
+        { "region": "vehicle",     "dst": [0.02, 0.78, 0.96, 0.20], "border": "#E84393" }
+      ]
+    },
+    {
+      "name": "Map + status",
+      "placements": [
+        { "region": "minimap",     "dst": [0.02, 0.02, 0.60, 0.96], "border": "#29D17D" },
+        { "region": "race_status", "dst": [0.64, 0.02, 0.34, 0.46], "border": "#3A7BFF" },
+        { "region": "weapon",      "dst": [0.64, 0.52, 0.34, 0.46], "border": "#FF8A00" }
+      ]
+    },
+    {
+      "name": "Big map",
+      "placements": [
+        { "region": "minimap", "dst": [0.02, 0.02, 0.96, 0.96] }
+      ]
+    },
+    {
+      "name": "Full game mirror",
+      "placements": [
+        { "region": "@full", "dst": [0.0, 0.0, 1.0, 1.0] }
+      ]
+    }
+  ]
+}

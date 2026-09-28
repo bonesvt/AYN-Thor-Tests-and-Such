@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Thor Dual Screen</string>
+
+    <string name="status_running">Running: HUD is on the second screen. Switch to your emulator and play.</string>
+    <string name="status_stopped">Stopped</string>
+    <string name="start">Start dual screen</string>
+    <string name="stop">Stop dual screen</string>
+    <string name="next_layout">Next layout</string>
+    <string name="calibrate">Calibrate on bottom screen</string>
+    <string name="reset">Reset profile to built-in</string>
+
+    <string name="label_profile">Game profile</string>
+    <string name="label_layout">Layout</string>
+    <string name="label_display">Second screen</string>
+    <string name="label_quality">Capture resolution</string>
+    <string name="display_auto">Auto (first secondary display)</string>
+    <string name="quality_full">Full (sharpest)</string>
+    <string name="quality_75">75%</string>
+    <string name="quality_50">50% (lightest)</string>
+
+    <string name="uncalibrated_notice">This profile hasn\'t been calibrated against the real game yet. Start dual screen, get into a race, then long-press the bottom screen (or tap Calibrate) and drag each box over its HUD element.</string>
+    <string name="profile_error">Profile skipped: %1$s</string>
+    <string name="how_to">1. Tap Start and allow screen capture (choose \"Entire screen\" if asked).\n2. Open your PS2 emulator and launch the game.\n3. On the bottom screen: double-tap = next layout, long-press = calibrate.\n\nTouching the bottom screen never takes controller focus away from the game.</string>
+    <string name="footer">Detected second screens:\n%1$s\n\nCalibrated profiles are saved to:\n%2$s\nDrop new .json profiles there to add games.</string>
+
+    <string name="need_overlay">Allow \"Display over other apps\" so the HUD can be drawn on the bottom screen, then tap Start again.</string>
+    <string name="no_second_screen">No second screen detected</string>
+    <string name="capture_denied">Screen capture was not allowed</string>
+    <string name="started_hint">Dual screen running. Now open your emulator.</string>
+    <string name="start_failed">Could not start dual screen: %1$s</string>
+    <string name="reset_done">Calibration removed, built-in profile restored</string>
+    <string name="reset_nothing">This profile is already the built-in version</string>
+
+    <string name="uncalibrated_banner">Uncalibrated profile. Long-press to line up the HUD boxes.</string>
+    <string name="edit_mode_source">Editing: game crops</string>
+    <string name="edit_mode_layout">Editing: this screen</string>
+    <string name="edit_layout_button">Layout: %1$s</string>
+    <string name="edit_move_bar">⇅</string>
+    <string name="edit_discard">Discard</string>
+    <string name="edit_save">Save</string>
+    <string name="edit_saved">Saved to %1$s</string>
+    <string name="edit_hint_source">Drag each box over its HUD element in the game image. Drag the round corners to resize. Pause in a race to make this easier.</string>
+    <string name="edit_hint_layout">Arrange where each HUD element appears on this screen.</string>
+
+    <string name="notification_channel">Dual screen</string>
+    <string name="notification_title">Dual screen active</string>
+    <string name="notification_text">Mirroring the game HUD onto the second screen</string>
+    <string name="action_next_layout">Next layout</string>
+    <string name="action_calibrate">Calibrate</string>
+    <string name="action_stop">Stop</string>
+</resources>
